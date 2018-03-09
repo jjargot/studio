@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:testt="http://www.bonitasoft.org/testt" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="testt" ecore:package="testt" targetNamespace="http://www.bonitasoft.org/testt">
+  <xsd:import namespace="http://www.eclipse.org/emf/2002/Ecore" schemaLocation="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.xsd"/>
+  <xsd:element ecore:ignore="true" name="Adrien" type="testt:Adrien"/>
+  <xsd:complexType name="Adrien">
+    <xsd:attribute name="toto" type="ecore:EString"/>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>testa</id>
+  <version>1.0.0</version>
+  <jarDependency>mysql-connector-java-5.1.23-bin.jar</jarDependency>
+</definition:ConnectorDefinition>
