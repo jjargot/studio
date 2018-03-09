@@ -9,7 +9,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_skmDhiOdEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_skmDhyOdEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_skmDiCOdEeifk-moMchGIA" name="Step1" incoming="_skmDoiOdEeifk-moMchGIA" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_skmDiCOdEeifk-moMchGIA" name="Step1" outgoing="_Vkw1QCOeEeifk-moMchGIA" incoming="_skmDoiOdEeifk-moMchGIA" overrideActorsOfTheLane="false">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_skmDiSOdEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_skmDiiOdEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_skmDiyOdEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
@@ -26,6 +26,17 @@
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_skmDliOdEeifk-moMchGIA"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_skmDlyOdEeifk-moMchGIA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
+        </elements>
+        <elements xmi:type="process:ServiceTask" xmi:id="_VknEQCOeEeifk-moMchGIA" name="Step2" incoming="_Vkw1QCOeEeifk-moMchGIA">
+          <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_VknERCOeEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_VknEQiOeEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_VknEQSOeEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_VknEQyOeEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
+          <loopCondition xmi:type="expression:Expression" xmi:id="_VknERSOeEeifk-moMchGIA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <loopMaximum xmi:type="expression:Expression" xmi:id="_VknERiOeEeifk-moMchGIA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_VknERyOeEeifk-moMchGIA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
+          <iteratorExpression xmi:type="expression:Expression" xmi:id="_VknESSOeEeifk-moMchGIA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_VknESCOeEeifk-moMchGIA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
       <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_smYMMCOdEeifk-moMchGIA" path="_skmDgSOdEeifk-moMchGIA/application/application"/>
@@ -49,6 +60,10 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_skmDoiOdEeifk-moMchGIA" target="_skmDiCOdEeifk-moMchGIA" source="_skmDgyOdEeifk-moMchGIA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_skmDoyOdEeifk-moMchGIA"/>
         <condition xmi:type="expression:Expression" xmi:id="_skmDpCOdEeifk-moMchGIA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_Vkw1QCOeEeifk-moMchGIA" target="_VknEQCOeEeifk-moMchGIA" source="_skmDiCOdEeifk-moMchGIA">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Vkw1QSOeEeifk-moMchGIA"/>
+        <condition xmi:type="expression:Expression" xmi:id="_Vkw1QiOeEeifk-moMchGIA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_skmDpSOdEeifk-moMchGIA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_skmDpiOdEeifk-moMchGIA"/>
@@ -100,6 +115,10 @@
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_skmDzCOdEeifk-moMchGIA" x="60" y="68"/>
             </children>
+            <children xmi:type="notation:Shape" xmi:id="_VknESiOeEeifk-moMchGIA" type="3027" element="_VknEQCOeEeifk-moMchGIA" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_VknETCOeEeifk-moMchGIA" type="5017"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VknESyOeEeifk-moMchGIA" x="404" y="60"/>
+            </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_skmDzSOdEeifk-moMchGIA"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_skmDziOdEeifk-moMchGIA" fontName="Segoe UI"/>
@@ -121,6 +140,13 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_skmD2yOdEeifk-moMchGIA" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_skmD3COdEeifk-moMchGIA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Vkw1QyOeEeifk-moMchGIA" type="4001" element="_Vkw1QCOeEeifk-moMchGIA" source="_skmDxiOdEeifk-moMchGIA" target="_VknESiOeEeifk-moMchGIA" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Vkw1RiOeEeifk-moMchGIA" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Vkw1RyOeEeifk-moMchGIA" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Vkw1RCOeEeifk-moMchGIA" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Vkw1RSOeEeifk-moMchGIA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
