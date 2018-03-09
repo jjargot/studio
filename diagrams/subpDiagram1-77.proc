@@ -25,7 +25,7 @@
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_w1_2EiOXEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_w1_2EyOXEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_w1_2FCOXEeifk-moMchGIA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_w1_2FSOXEeifk-moMchGIA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_G3T-0COdEeifk-moMchGIA" name="newForm" content="ac46cd5d-b1d6-4c94-8bb5-5d82e1b47123" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_w1_2FiOXEeifk-moMchGIA"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_w1_2FyOXEeifk-moMchGIA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -42,7 +42,7 @@
       <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_w1_2ICOXEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
       <confirmationMessage xmi:type="expression:Expression" xmi:id="_w1_2ISOXEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_w1_2IiOXEeifk-moMchGIA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_w1_2IyOXEeifk-moMchGIA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_BOq7USOdEeifk-moMchGIA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <recapPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_w1_2JCOXEeifk-moMchGIA" name="" content="" returnTypeFixed="true"/>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_w1_2JSOXEeifk-moMchGIA">
