@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>supActor-impl</implementationId>
+  <implementationVersion>1.0.0</implementationVersion>
+  <definitionId>supActor</definitionId>
+  <definitionVersion>01.00.00</definitionVersion>
+  <implementationClassname>org.support.bonitasoft.connector.SupActorImpl</implementationClassname>
+  <description></description>
+  <jarDependencies/>
+</implementation:connectorImplementation>

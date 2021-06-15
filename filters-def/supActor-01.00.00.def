@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>supActor</id>
+  <version>01.00.00</version>
+  <input mandatory="true" name="aDummyString" type="java.lang.String"/>
+  <page id="Inputs">
+    <widget xsi:type="definition:Text" id="dummyString" inputName="aDummyString"/>
+  </page>
+</definition:ConnectorDefinition>
